@@ -1,0 +1,53 @@
+.h4text{
+     text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 50px 30px;
+    max-height: 5em;
+    font-weight: 500;
+}
+img{
+  cursor:pointer;
+}
+#dealOfDay{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+}
+#exclusiveBrands ,#bestbuy {
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+    gap: 5px;
+    
+  }#topicks{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+
+}#categorytobag,#trendingoutfit,#budgetpic,#unmissibleforseason,#newnessforeveryocc,#springsummerseason,#newintopbrands ,#dealOntop ,#myntraluxe,#springsummer,#trendsforher,#trendsforhim{
+  display: grid;
+    grid-template-columns: repeat(8,1fr);
+}#brandsAtslashed,#bestforkid ,#stylecasthotestfind{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+
+}#giftingcards{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  
+}#dealsonlatestarr{
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    
+  }#latestinbeauty{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+
+  
+}#topinfluencer, #coloursofseassion{
+  
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  
+}
