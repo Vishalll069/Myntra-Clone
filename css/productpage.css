@@ -1,0 +1,40 @@
+#data{
+    display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:10px;
+   margin: auto;
+   padding: 20px;
+}
+
+#data img{
+    width:75%;
+    height: auto;
+
+}
+
+#sidebar{
+    float:left;
+    /* position: fixed; */
+    width: 10%;
+    height: 100vh;
+    border: 1px solid teal;
+}
+body >div{
+margin: auto;
+padding: 20px;
+}
+
+.checkbox {
+    clip-path: circle(46% at 50% 50%);
+  }
+/* 
+  #side-bar{
+    float:initial;
+  }
+   */
+
+   #sort-bar{
+ display: flex;
+ justify-content: space-between;
+
+   }
