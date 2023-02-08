@@ -51,3 +51,11 @@ img{
   grid-template-columns: repeat(6,1fr);
   
 }
+
+@media all and (min-width:50px) and (max-width:421px){
+ 
+  .container{
+    width: 100%;
+  }
+  
+}
