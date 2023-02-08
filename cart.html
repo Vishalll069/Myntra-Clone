@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"
+        type="image/x-icon">
+    <title>Bag</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <style>
+        /* div {
+        border: 1px solid red;
+      } */
+        li {
+            color: grey;
+        }
+
+        a {
+            color: #ff3f6c;
+            text-decoration: none;
+        }
+
+        /* img {
+        height: 500px;
+      } */
+        .border {
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .spaceEven {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .flexThis {
+            display: flex;
+            justify-content: space-between;
+            /* padding: 10px; */
+        }
+
+        .donationCash {
+            border: 1px solid lightgray;
+            padding: 5px;
+            width: 17%;
+            border-radius: 50px;
+            text-align: center;
+            color: black;
+            background-color: white;
+        }
+
+        .donationCash:nth-child(4) {
+            /* margin: auto; */
+            text-decoration-color: black;
+            font-weight: 400;
+            width: 20%;
+        }
+
+        .invisiblebtn {
+            border: 0px;
+            background-color: white;
+            font-weight: 500;
+            font-size: small;
+        }
+
+        .redbtn {
+            background-color: white;
+            color: #ff3f6c;
+            border: 2px solid #ff3f6c;
+            border-radius: 5px;
+        }
+
+        .closerDivs {
+            height: 0px;
+        }
+
+        .bigRedBtn {
+            width: 90%;
+            /* margin-left: 5%; */
+            margin-top: 20px;
+            height: 40px;
+            background-color: #ff3f6c;
+            color: white;
+            border: 0px;
+            border-radius: 3px;
+        }
+
+        .bottomBagNavbar {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            width: 65%;
+            margin-top: 70px;
+        }
+
+        .bottomBagNavbar>div>img {
+            height: 30px;
+        }
+
+        #helpInFightCOVID {
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+
+        #discount {
+            color: #22aca5;
+        }
+
+        #topBagNavbar {
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        #topBagNavbar>img {
+            height: 80%;
+        }
+
+        #sale {
+            text-align: center;
+        }
+
+        #bagBody {
+            display: flex;
+            width: 60%;
+            margin: auto;
+        }
+
+        #bagLeft {
+            width: 60%;
+
+            /* font-size: x-small; */
+        }
+
+        #bagRight {
+            border-left: 1px solid rgb(206, 206, 206);
+            width: 40%;
+            padding-left: 20px;
+            margin-left: 3%;
+        }
+
+        #bagPin {
+            line-height: 0px;
+            height: 30px;
+            border: 2px solid #ff3f6c;
+            color: #ff3f6c;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        #roundButtons>div {
+            border: 1px solid black;
+            border-radius: 20px;
+            min-width: 50px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #pqr {
+            height: 40px;
+            width: 30px;
+            margin-left: 20px;
+        }
+
+        #img101 {
+            height: 40px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body onload="loadCart()">
+    <!-- <div id="navbar"></div> -->
+    <!-- <h1 id="sale">Sale ends in: (timer)</h1> -->
+    <div id="topBagNavbar" style="overflow: hidden">
+        <a id="pqr" href="/index.html"><img id="img101"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"
+                alt="" /></a>
+        <img style="height: 70px" src="../scripts/top bag.PNG" alt="" />
+    </div>
+    <div id="bagBody">
+        <div id="bagLeft">
+            <div class="flexThis" style="
+            border: 1px solid rgb(193, 193, 193);
+            margin-bottom: 30px;
+            height: 60px;
+            padding: 15px;
+            border-radius: 5px;
+          ">
+                <h6>Deliver to:Aman Mehta ,House No 137, Near PNB ,Pincode-127032</h6>
+                <button id="bagPin">Change</button>
+            </div>
+            <div class="border">
+                <span><i class="fa-solid fa-badge-percent"></i></span>
+                <h6>Available Offers</h6>
+                <ul>
+                    <li>
+                        10% Instant Discount on SBI Desai Cards on a min spend of
+                        Rs 3,500 TCA
+                    </li>
+                    <li>
+                        10% Instant Discount on Swiss Bank Credit and Debit cards on a min
+                        spend of Rs 3,000 TCA
+                    </li>
+                    <li>5% Unlimited Cashback on Flipkart Axis Bank Credit Card TCA</li>
+                </ul>
+            </div>
+            <div class="border" style="margin-top: 30px; margin-bottom: 30px">
+                <h6>Yay! No covenience fee on this order</h6>
+            </div>
+            <div id="container" class="flexThis" style="flex-direction: column;">
+
+                <div id="numberOfItems"></div>
+
+            </div>
+            <div id="appendBag" class="border" style="margin-bottom: 30px"></div>
+            <div class="border">
+                <button class="invisiblebtn" onclick="window.location.href = './wishlist.html'">
+                    Add More From Wishlist
+                </button>
+            </div>
+        </div>
+        <div id="bagRight">
+            <h6>DONATE FOR COVID-19 RELIEF</h6>
+            <div id="helpInFightCOVID">
+                <input type="checkbox" style="margin-top: 5px; margin-left: 5px" />
+
+
+                <h6 style="margin-left: 10px">Help India fight COVID-19</h6>
+            </div>
+            <div id="donate" class="spaceEven">
+                <button class="donationCash">₹10</button>
+                <button class="donationCash">₹50</button>
+                <button class="donationCash">₹100</button>
+                <input type="number" class="donationCash" placeholder="Other" style="width: 25%" />
+            </div>
+            <a href=""> Know More </a>
+            <br />
+            <h6 style="margin-top: 30px">COUPONS</h6>
+            <div class="flexThis">
+                <h6>Apply Coupons</h6>
+                <button class="redbtn">APPLY</button>
+            </div>
+            <h6 style="margin-top: 40px">PRICE DETAILS</h6>
+            <div class="flexThis" class="closerDivs">
+                <p>Total MRP</p>
+                <p id="totalActual"></p>
+            </div>
+            <div class="flexThis" class="closerDivs">
+                <p>Discount on MRP</p>
+                <p id="discount"></p>
+            </div>
+            <div class="flexThis" class="closerDivs">
+                <p>Coupon Discount</p>
+                <p>Apply Coupon</p>
+            </div>
+            <div class="flexThis" class="closerDivs" style="border-bottom: 1px solid grey; margin-bottom: 30px">
+                <p>Convenience Fee <a href="">Know more</a></p>
+                <div class="flexThis">
+                    <p style="text-decoration: line-through">₹99</p>
+                    <p style="color: #22aca5">FREE!</p>
+                </div>
+            </div>
+            <div class="flexThis">
+                <h6>Total Amount</h6>
+                <h6 id="total"></h6>
+            </div>
+            <!-- <a href="deliveryAddress.html" > -->
+            <button class="bigRedBtn" onclick=" ">
+                PLACE ORDER
+            </button>
+        </div>
+    </div>
+    <br />
+    <h5 style="margin-left: 20%">You may also like:</h5>
+    <div id="roundButtons" class="flexThis" style="width: 60%; margin: auto">
+        <div>All</div>
+        <div>Hair Accessory</div>
+        <div>Belts</div>
+        <div>Perfume And Body Mist</div>
+        <div>Headband</div>
+        <div>Shaving Brush & Razor</div>
+        <div>Mascara</div>
+        <div>Gloves</div>
+    </div>
+    <div class="bottomBagNavbar">
+        <div>
+            <h6>Need Help? Contact Us</h6>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="cart.js"></script>
+
+
+<!-- <script src="../scripts/navbar.js" type="=module"></script> -->
