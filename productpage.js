@@ -158,7 +158,9 @@ function displayproducts(){
         });
         cart.push(cartitem[0]);
      console.log(cartitem); 
-     localStorage.setItem("cart",JSON.stringify(cart));  
+     localStorage.setItem("cart",JSON.stringify(cart)); 
+     
+     window.location.href = './cart.html' ;
     }
 }
 
