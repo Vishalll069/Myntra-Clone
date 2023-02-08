@@ -6,10 +6,18 @@
    padding: 20px;
 }
 
+#data div{
+  cursor: pointer;
+}
+
 #data img{
     width:75%;
     height: auto;
+   
 
+}
+img{
+  width: 100%;
 }
 
 #sidebar{
@@ -18,10 +26,12 @@
     width: 10%;
     height: 100vh;
     border: 1px solid teal;
+    padding: 20px;
+    /* margin-left: 30px; */
 }
 body >div{
 margin: auto;
-padding: 20px;
+/* padding: 20px; */
 }
 
 .checkbox {
@@ -35,6 +45,27 @@ padding: 20px;
 
    #sort-bar{
  display: flex;
- justify-content: space-between;
+ flex-direction: row;
+    flex-wrap: wrap;
+ /* border: 2px solid teal; */
 
+   }
+   #sort-bar> div{
+    /* border: 2px solid teal; */
+    margin: auto;
+   }
+
+   #sort-bar >div:first-child{
+    margin:0px;
+   }
+
+   #sort-bar>div:nth-child(2){
+    margin-left:100px;
+   }
+
+
+
+   .home{
+    margin-left: 30px;
+    color: blue;
    }

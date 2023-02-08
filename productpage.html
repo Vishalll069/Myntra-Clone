@@ -5,23 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/productpage.css">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/myntra-2709168-2249158.png?f=avif&w=256" type="image/x-icon">
     <title>Myntra Fashion Store</title>
 </head>
 <body>
+    <h4 class="home">Home/Mens Shirt</h4>
     <div id="sort-bar">
-        <div>  <h4>Home/Mens Shirt</h4></div>
+       
+     
         <div><h4>FILTER</h4></div>
-        <div> <h4>CLEAR ALL</h4></div>
-        <div> <h4>BUNDELS</h4></div>
-        <div> <h4>COUNTRY OF ORIGIN</h4></div>
-      
-      
-        
-       
-       
-       
+        <div > 
+            <button class="toclear" onclick="clear()">CLEAR ALL</button>
+        </div>
+        <div> 
+            <select name="bundle" id="bundle">
+            <option value="bundle">Bundle</option>
+            
+        </select></div>
+        <div class="origin">
+            <select name="country" id="country">
+                <option value="corigin">Country of origin</option>
+                <option value="India">India</option>
+                <option value="other">other</option>
+            </select>
+            </div>
         <div class="sortby"  id="sortby">
-            <select name="" id="sortby" >
+            <select name="" id="sortby" onchange="sortvalue()" >
               <option value="SbyR" class=> &nbsp; &nbsp;sort: by Recommended</option>
                <option value="What's New">&nbsp; &nbsp;What's New</option>
                <option value="Popularity">&nbsp; &nbsp;Popularity</option>
