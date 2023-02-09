@@ -608,8 +608,7 @@ window.addEventListener("load", function () {
   });
 
   function myfunction(){
-    displayproducts(products);
-    console.log("working");
+    location.reload();
   }
 
 function displayproducts(products){
@@ -702,35 +701,19 @@ function sortvalue(){
         });
         displayproducts(products);
       }
+
+      if(sortvalue=="SbyR"){
+        location.reload();
+      }
       if(sortvalue=="new"){
-        products.sort(function(a,b){
-            return b.id - a.id;
-        });
+        products.sort();
+        products.reverse();
+        displayproducts(products);
+      }
+      if(sortvalue=="Popularity"){
+        products.sort(function(){return 0.5 - Math.random()});
         displayproducts(products);
       }
 }
 
 
-
-//   var wish=document.createElement("button").addEventListener("click",function(event){
-//     window.location.href = "nothing.html"
-//   })
-
-
-// var wishlist=document.createElement("button");
-//         div.addEventListener("mouseover",function(event){
-//             let   hoverDiv = document.createElement("div");
-//                     brand.innerHTML =  `<i class="fa-solid fa-heart"></i> whishlist `; 
-   
-                   
-//                      hoverDiv.append(brand,wish);
-//                      div.append(hoverDiv)
-//                  });
-                
-//                  div.addEventListener("mouseout",function(event){
-           
-//                     // console.log(,"this is b")
-//                         brand.innerText =  ele.brand;
-    
-            
-//                     });
