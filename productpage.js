@@ -607,7 +607,7 @@ window.addEventListener("load", function () {
     displayproducts(products);
   });
 
-  function myfunction(){
+  function myFunction(){
     location.reload();
   }
 
@@ -716,4 +716,40 @@ function sortvalue(){
       }
 }
 
+
+// function highlander(){
+//     var hcheckbox=document.getElementById("Highlander").value;
+//     if(hcheckbox.checked==true){
+//         var high=products.find(ele=>{
+//             return ele.brand==='HIGHLANDER'; console.log(ele.brand);
+//         })||[];
+       
+//     }
+//     displayproducts(high);
+//     console.log(hcheckbox,high);
+// }
+
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+ 
+checkboxes.forEach(function(checkbox) {
+  checkbox.addEventListener('change', function() {
+   let filteredArray = [];
+    checkboxes.forEach(function(cb) {
+      if (cb.checked) {
+        filteredArray = [...filteredArray, ...products.filter(function(obj) {
+          return obj.brand === cb.value;
+          console.log(obj.brand,cb.value);
+        })];
+        
+      }
+    });
+   
+    if(filteredArray.length===0){
+        displayproducts(products);
+    }
+    else{
+        displayproducts(filteredArray);
+    }
+  });
+});
 
