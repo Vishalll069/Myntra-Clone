@@ -1,19 +1,36 @@
+.home{
+  margin-left: 0px;
+  color:rgb(46, 31, 31);
+ }
+ .home span{
+ 
+  color: rgb(136, 123, 123);
+ }
+/* 
+ body{
+  background-color: rgb(218, 148, 121);
+ } */
 #data{
     display: grid;
    grid-template-columns: repeat(4,1fr);
-   gap:10px;
+   gap:20px;
    margin: auto;
    padding: 20px;
 }
 
-#data div{
+#data>div{
+  text-align: center;
   cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#data>div:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #data img{
-    width:75%;
-    height: auto;
-   
+    width:100%;
+  
 
 }
 img{
@@ -22,50 +39,73 @@ img{
 
 #sidebar{
     float:left;
-    /* position: fixed; */
+    border: 0.6px solid teal;
     width: 10%;
     height: 100vh;
-    border: 1px solid teal;
     padding: 20px;
-    /* margin-left: 30px; */
+ 
 }
 body >div{
 margin: auto;
-/* padding: 20px; */
+
 }
 
-.checkbox {
+/* .checkbox {
     clip-path: circle(46% at 50% 50%);
-  }
-/* 
-  #side-bar{
-    float:initial;
-  }
-   */
+  } */
+
 
    #sort-bar{
  display: flex;
- flex-direction: row;
+ flex-direction: row; 
     flex-wrap: wrap;
- /* border: 2px solid teal; */
+ /* justify-content: space-evenly; */
+ 
 
    }
    #sort-bar> div{
-    /* border: 2px solid teal; */
-    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
    }
 
    #sort-bar >div:first-child{
-    margin:0px;
+    /* margin:0px; */
+    
+    margin-left: 20px;
+    margin-right:94px
+    /* paddin10px 20px; */
+    
    }
 
-   #sort-bar>div:nth-child(2){
-    margin-left:100px;
+
+
+   #sortby{
+
+    margin-left: auto;
+    
+    /* padding: 20px; */
    }
 
+  
 
-
-   .home{
-    margin-left: 30px;
-    color: blue;
+   #sortit{
+    padding: 10px 20px;
    }
+
+  
+   #toclearb{
+    text-align: center;
+    /* margin: auto; */
+    color:red;
+    padding:10px;
+    background-color: transparent;
+    border: none;
+   }
+
+ 
+  
+   /* div{
+    border: 2px solid teal;
+   } */

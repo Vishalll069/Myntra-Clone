@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/productpage.css">
+    <script src="https://kit.fontawesome.com/32979f5c51.js" crossorigin="anonymous"></script>
     <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/myntra-2709168-2249158.png?f=avif&w=256" type="image/x-icon">
     <title>Myntra Fashion Store</title>
 </head>
 <body>
-    <h4 class="home">Home/Mens Shirt</h4>
+    <header id="">
+
+    </header>
+    <h4 class="home">Home<span>/Mens Shirt</span></h4>
     <div id="sort-bar">
        
      
-        <div><h4>FILTER</h4></div>
-        <div > 
-            <button class="toclear" onclick="clear()">CLEAR ALL</button>
+        <div><h4>FILTERS</h4></div>
+        <div id="toclear"> 
+            <button id="toclearb" onclick="myFunction()">CLEAR ALL</button>
         </div>
         <div> 
             <select name="bundle" id="bundle">
@@ -30,13 +34,13 @@
             </select>
             </div>
         <div class="sortby"  id="sortby">
-            <select name="" id="sortby" onchange="sortvalue()" >
-              <option value="SbyR" class=> &nbsp; &nbsp;sort: by Recommended</option>
-               <option value="What's New">&nbsp; &nbsp;What's New</option>
+            <select name="" id="sortit" onchange="sortvalue()" >
+              <option value="SbyR" class="rec"> &nbsp; &nbsp;sort: by Recommended</option>
+               <option value="new">&nbsp; &nbsp;What's New</option>
                <option value="Popularity">&nbsp; &nbsp;Popularity</option>
-               <option value="Better Discount" >&nbsp; &nbsp;Better Discount</option>
-               <option value="Price: High to Low" >&nbsp; &nbsp;Price: High to Low</option>
-               <option value="Price: Low to High" >&nbsp; &nbsp;Price: Low to High</option>
+               <option value="discount" >&nbsp; &nbsp;Better Discount</option>
+               <option value="htl" >&nbsp; &nbsp;Price: High to Low</option>
+               <option value="lth" >&nbsp; &nbsp;Price: Low to High</option>
              
             </select>
     </div>
@@ -45,10 +49,10 @@
         <div id="brand-bar">
             <h5>BRAND</h5>
             <br>
-            <input type="checkbox" class="check_box" id="Roadster"> <span class="brand_space" value = "Roadster">Roadster</span><br>
-            <input type="checkbox" class="check_box" id="nike"> <span class="brand_space" value = "Nike" >Nike</span><br>
-            <input type="checkbox" class="check_box" id="puma" > <span class="brand_space" value = "puma"  >Puma</span><br>
-            <input type="checkbox" class="check_box" id="H&M," > <span class="brand_space" value = "H&M," >H&M</span><br><br><hr>
+            <input type="checkbox" class="checkbrand" id="roadster" onchange="brandfilter()"> <span class="brand_space" value = "Roadsterr">Roadster</span><br>
+            <input type="checkbox" class="checkbrand" id="nike" onchange="brandfilter()"> <span class="brand_space" value = "Nike" >Nike</span><br>
+            <input type="checkbox" class="checkbrand" id="puma"  onchange="brandfilter()"> <span class="brand_space" value = "Puma"  >Puma</span><br>
+            <input type="checkbox" class="checkbrand" id="h&m,"  onchange="brandfilter()"> <span class="brand_space" value = "H&M," >H&M</span><br><br><hr>
         </div>
         <div id="price-bar">
             <h5>PRICE</h5>
@@ -82,3 +86,7 @@
 </body>
 </html>
 <script src="productpage.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
