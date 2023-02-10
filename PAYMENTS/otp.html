@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="otp.css">
+        <title>OTP</title>
+    </head>
+    
+    <body>
+        <div id="otpDiv">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMN4uyHlEsJ0GjViEd2G3tuaaIINxnPeijJw&usqp=CAU"
+                alt="OTP IMAGE">
+            <div id="otpline">
+                <h2>Verify with OTP</h2>
+                <p>Sent to registered Mobile No.<p id="otpNum"></p></p>
+            </div>
+            <div id="inputDiv">
+                <input id="otp1" type="tel" maxlength="4">
+                <!-- <input id="otp2" type="tel" maxlength="1">
+                <input id="otp3" type="tel" maxlength="1">
+                <input id="otp4" type="tel" maxlength="1"> -->
+               
+            </div>
+            <div>
+                <button id="checkotp" onclick="payment()"> CONFIRM</button></a>
+            </div>
+            <div id="checkDiv">
+                <h4 onclick="resend()">RESEND OTP</h4>
+            </div>
+        </div>
+    </body>
+    <script>
+        var a = 5297;
+        alert("Use This OTP :"+ a)
+        function getOtp(){
+            alert("Use This OTP :"+ a);
+        }
+
+        function payment() {
+            let entered_otp = parseInt(document.getElementById("otp1").value);
+
+            // var a = generateOTP();
+            if (a === entered_otp ) {
+                alert("PAYMENT SUCCESSFUL");
+                window.location.href = "image.html";
+            } 
+            else {
+                alert("Incorrect OTP !!");
+            }
+        }
+        function resend(){
+            alert("OTP is "+a);
+        }
+        // function payment(){
+        //    window.location=;
+           
+        // }
+    </script>
+    </html>

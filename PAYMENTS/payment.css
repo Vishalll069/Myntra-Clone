@@ -186,6 +186,7 @@ body {
 h4+p+p{
     color: #ff3e6c;
     text-align: left;
+    cursor: pointer;
 }
 h4{
     padding: 10px ;
@@ -222,6 +223,10 @@ i{
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 40px;
+}
+.payNow{
+    background-color:#ff3e6c;
+    color: white;
 }
 #pay{
     width: 80%;
