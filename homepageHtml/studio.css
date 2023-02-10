@@ -1,3 +1,7 @@
+body{
+    background: #fceeeb;
+}
+
 .container-fluid{
     /* border:1px solid red; */
     display:flex;
@@ -5,6 +9,7 @@
     align-items:center;
     margin-top: 15rem;
     flex-direction: column;
+    
 }
 
 .title{
@@ -18,6 +23,7 @@
     background-color: rgb(255, 255, 255);
     /* justify-content: center; */
     position: fixed;
+    /* margin-bottom: 1rem; */
     top: 16%;
     z-index: 1;
     color: rgb(79, 79, 79);
@@ -42,12 +48,15 @@ h3:hover{
     width:40%;
     border:5px solid whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: auto;
+    background: white;
 }
 
 
 #boxes{
     width:100%;
     height:max-content;
+    margin-top: 3rem;
 }
 
 #boxes>img{

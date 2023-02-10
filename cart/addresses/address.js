@@ -59,8 +59,8 @@ if(name==""){
   return false;
 }
 
-if(mobile==""){
-  alert("Mobile number is mandatory!")
+if(mobile=="" || mobile.length!=10){
+  alert("Mobile number is mandatory! please use required format")
   return false;
 }
 if(pincode==""){
@@ -106,7 +106,7 @@ return true;
 }
 let priceObj = JSON.parse(localStorage.getItem("totalPriceInfo"));
 let totalActual = priceObj.totalQuantiPrice;
-let total = priceObj.totalActualPrice;
+let total = priceObj.totalActualQuantiPrice;
 let discount = priceObj.discount;
 console.log(priceObj);
 

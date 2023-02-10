@@ -60,8 +60,8 @@ cartGo.map((elem) => {
   document.getElementById("appendBagSmall").append(box);
 });
 let priceData = JSON.parse(localStorage.getItem("totalPriceInfo"));
-let totalActual = priceData.totalActualPrice;
-let total = priceData.totalPrice;
+let totalActual = priceData.totalActualQuantiPrice;
+let total = priceData.totalQuantiPrice;
 // total.style.fontSize="large"
 document.getElementById("total").style.fontSize = "large"
 // console.log(total);

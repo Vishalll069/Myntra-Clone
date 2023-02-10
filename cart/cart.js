@@ -187,7 +187,8 @@ cart.map((elem, index) => {
     priceobj.totalActualQuantiPrice = elem.actualQuantiPrice;
     totalActual = elem.actualQuantiPrice;
 
-    // totalPriceToShow();
+    priceobj.discount =  priceobj.totalActualQuantiPrice-priceobj.totalQuantiPrice
+    discount = priceobj.discount;
     document.getElementById("totalActual").innerText = `₹ ${totalActual}`;
     document.getElementById("total").innerText = `₹ ${totalPrice}`;
     document.getElementById("discount").innerText = `₹ ${discount}`;
@@ -250,7 +251,7 @@ cart.map((elem, index) => {
 // }
 
 let priceData = JSON.parse(localStorage.getItem("totalPriceInfo"));
-console.log(priceData);
+// console.log(priceData);
  totalActual = priceData.totalActualPrice;
  totalPrice = priceData.totalPrice;
  discount = priceData.discount;
