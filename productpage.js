@@ -1464,6 +1464,32 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
         }
       });
 
+      checkboxes.forEach(function(cb) {
+        if (cb.checked) {
+          filteredArray = [...filteredArray, ...products.filter(function(obj) {
+            if(cb.value==10){
+            return obj.offer >10;
+          }
+          if(cb.value==20){
+            return obj.offer >20;
+          }
+          if(cb.value==30){
+            return obj.offer >30;
+          }
+          if(cb.value==40){
+            return obj.offer >40;
+          }
+          if(cb.value==50){
+            return obj.offer >50;
+          }
+            console.log(obj.brand,cb.value);
+         
+          })];
+          
+        }
+      });
+
+      
       // to edit
 
       checkboxes.forEach(function(cb) {

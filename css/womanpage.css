@@ -148,4 +148,33 @@ body {
     padding: 10px 30px;
   }
 
+  /* mobile view */
+  @media all and (min-width:50px) and (max-width:421px){
+    #data {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
   
+    #sidebar {
+     display: none;
+    }
+  }
+  /* tablet-view */
+  
+  @media all and (min-width:421px) and (max-width:900px){
+    #data {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    #sidebar {
+     display: none;
+    }
+  }
+  
+  #country{
+    border: transparent;
+  }
+  #bundle{
+    border: transparent;
+  }
