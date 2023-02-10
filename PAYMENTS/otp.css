@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+    font-size: 80%;
+    --primaryFont : 'DM Sans', sans-serif;
+    --charSpace : 6px; 
+    --primaryColor : #3e4152;
+    --secondaryColor : #fafbfc;
+}
+a:link{
+    text-decoration: none;
+}
+body{
+    font-family: var(--primaryFont);
+    scroll-behavior: smooth;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: auto;
+}
+#optDiv>div{
+    /* border: 2px solid teal; */
+    text-align: center;
+}
+
+/* #otp1, #otp2, #opt3, #opt4{
+    width: 40px;
+    height: 40px;
+} */
+#otpDiv{
+    width:30%;
+    margin: auto;
+    margin-top:2%;
+    padding-bottom: 100px;
+    line-height: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    background-color: white;
+}
+#otpDiv>img
+{
+    width: 105%;
+    margin: auto;
+    margin-top: 60px;
+    padding:0px 60px;
+}
+#otpline{
+    /* border: 2px solid teal;  */
+    width: 70%;
+    padding-top: 20px;
+    margin:auto;
+    text-align: center;
+}
+p{
+    font-size: 13px;
+}
+h2+p{
+    color: gray;
+    margin-top: -0px;
+}
+/* #inputDiv{
+    
+/**/
+    /* width: 100%;
+    margin: auto; */
+    /* padding: 30px;
+    margin-left: 90px; */
+    /* display: flex;
+    justify-content:center; */
+    
+
+/* #otp1{
+    width: 100%;
+    padding: 0.5rem;
+} */
+h4{
+    cursor: pointer;
+}
+#inputDiv>input{
+    border:1px solid hwb(346 24% 0%);
+    width: 30%;
+    padding: 0.5rem;
+    margin: 10px;
+    text-align: center;
+    /* color: black; */
+    font-size: 20px;
+    
+    /* border: none; */
+}
+#inputDiv>input:focus{
+    /* color: hwb(346 24% 0%); */
+    outline: none;
+}
+button{
+    width: 50%;
+    height: 30px;
+   margin: auto;
+    border: none;
+    background-color:hwb(346 24% 0%);
+    color: white;
+    /* color: white; */
+    font-weight: bold;
+}
+#checkotp{
+    /* text-align: center; */
+    margin: auto;
+}
+#checkDiv{
+    /* width: 80%;
+    padding-top: 50px; */
+    text-align: center;
+}
+#checkDiv>h4{
+    color: #ff3e6c;
+    margin-top: 10px;
+    font-size: small;
+    /* margin: 0px 63px; */
+}
