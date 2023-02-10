@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Select Address</title>
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <style>
+      /* div {
+        border: 1px solid red;
+      } */
+      a {
+        color: #ff3f6c;
+        text-decoration: none;
+      }
+      button {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 5px;
+        height: 40px;
+      }
+      .bigRedBtn {
+        margin-top: 25px;
+        width: 100%;
+        background-color: #ff3f6c;
+        color: white;
+        border: 0px;
+      }
+      .flexThis {
+        display: flex;
+        justify-content: space-between;
+      }
+      .greyDiv {
+        border: 1px solid rgb(198, 198, 198);
+        border-radius: 5px;
+      }
+      .bottomBagNavbar {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 65%;
+        margin-top: 70px;
+      }
+      .bottomBagNavbar > div > img {
+        height: 30px;
+      }
+      #selectAddressContainer {
+        width: 70%;
+        margin: auto;
+        display: flex;
+      }
+      #selectAddressLeft {
+        width: 60%;
+        padding: 15px;
+      }
+      #selectAddressRight {
+        width: 35%;
+        margin-left: 5%;
+        padding: 10px;
+        border-left: 1px solid rgb(191, 191, 191);
+      }
+      #removeEditDiv {
+        height: 40px;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+      }
+      #removeEditDiv > button {
+        width: 100px;
+      }
+      #topBagNavbar {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding: 10px;
+        vertical-align: middle;
+      }
+      #topBagNavbar > img {
+        height: 80%;
+      }
+      #discount {
+        color: #22aca5;
+      }
+      #address,
+      #mobile {
+        font-size: small;
+      }
+
+
+      #pqr{
+        height: 40px; width: 30px;
+        margin-left: 20px;
+      }
+
+      #img101{
+        height:40px;
+        width:50px;
+      }
+      /* #selectDeliveryAddressDiv {
+      } */
+    </style>
+    <link rel = "icon"href="https://cdn.iconscout.com/icon/free/png-512/myntra-2709168-2249158.png?f=avif&w=256"
+    type = "image/x-icon">
+  </head>
+  <body>
+    <div id="topBagNavbar" style="overflow: hidden">
+      <a id="pqr"  href="/index.html"><img  id="img101"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU" alt="" /></a>
+      <img src="/cart/topselect.PNG" alt="" />
+    </div>
+    <div id="selectAddressContainer">
+      <div id="selectAddressLeft">
+        <div class="flexThis" id="selectDeliveryAddressDiv">
+          <h5 style="margin-top: 5px">Select Delivery Address</h5>
+          <button onclick="window.location.href = './address.html'">Add New Address</button>
+        </div>
+        <h6>Default Address</h6>
+        <div class="greyDiv" style="padding: 30px">
+          <h6 id="name"></h6>
+          <br />
+          <p id="address"></p>
+          <p id="mobile"></p>
+          <ul>
+            <li>Pay on delivery</li>
+          </ul>
+          <div id="removeEditDiv">
+            <button onclick="removeAddress()">REMOVE</button>
+            <button onclick="window.location.href = './address.html'">
+              EDIT
+            </button>
+          </div>
+        </div>
+        <div
+          class="greyDiv"
+          style="
+            height: 70px;
+            margin-top: 20px;
+            padding-top: 25px;
+            padding: 20px;
+          "
+        >
+          <button
+            style="
+              color: #ff3f6c;
+              border: 0px;
+              font-weight: 600;
+              font-size: medium;
+              margin-top: -15px;
+              margin-left: -10px;
+            "
+            onclick="window.location.href = './address.html'"
+          >
+            + Add New Address
+          </button>
+        </div>
+      </div>
+      <div id="selectAddressRight">
+        <h6>Delivery Estimates</h6>
+        <div id="appendBagSmall"></div>
+        <br />
+        <h6>PRICE DETAILS(items)</h6>
+        <div class="flexThis">
+          <p>Total MRP</p>
+          <p id="totalActual"></p>
+        </div>
+        <div class="flexThis">
+          <p>Discount on MRP</p>
+          <p id="discount"></p>
+        </div>
+        <div
+          style="height: 70px; border-bottom: 1px solid rgb(195, 195, 195)"
+          class="flexThis"
+        >
+          <p>Convenience Fee <a href="">know more</a></p>
+
+          <div class="flexThis">
+            <p style="text-decoration: line-through">₹99</p>
+            <p style="color: #22aca5">FREE!</p>
+          </div>
+        </div>
+        <br />
+        <div class="flexThis">
+          <h6>Total Amount</h6>
+          <h4 id="total"></h4>
+        </div>
+        <button
+          class="bigRedBtn"
+          onclick="window.location.href = '#';"
+        >
+          <h4>CONTINUE</h4>
+        </button>
+      </div>
+    </div>
+    <div class="bottomBagNavbar">
+      <div>
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"
+          alt=""
+        />
+      </div>
+      <div><h6>Need Help? Contact Us</h6></div>
+    </div>
+  </body>
+</html>
+
+<script src="selectAddress.js"></script>
