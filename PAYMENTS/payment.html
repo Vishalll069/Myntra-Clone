@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6f8f585e95.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="payment.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <title>Payments</title>
 </head>
 
@@ -42,9 +42,13 @@
       <h4>Choose Payment Mode</h4>
       <div id="payment">
         <div id="mode">
-          <div id="card" onclick="credit()">
+          <div id="card">
             <i class="fa-regular fa-credit-card"></i>
-            <h5>Credit/Debit Card</h5>
+            <h5 onclick="creditShow()">Credit/Debit Card</h5>
+          </div>
+          <div>
+            <i class="fa-regular fa-money-bill-1"></i>
+            <h5>Cash On Delivery</h5>
           </div>
           <div>
             <i class="fa-brands fa-google-pay"></i>
@@ -55,31 +59,48 @@
             <h5>Paytm/Wallets</h5>
           </div>
           <div>
-            <i class="fa-thin fa-building-columns"></i>
+            <i class="fa-light fa-building-columns"></i>
             <h5>Net Banking</h5>
           </div>
           <div>
             <i class="fa-light fa-money-check-dollar"></i>
             <h5>EMI/Pay Later</h5>
           </div>
-          <div>
-            <i class="fa-regular fa-money-bill-1"></i>
-            <h5>Cash On Delivery</h5>
-          </div>
         </div>
-          <div id="paymentDiv">
+          <!-- <div id="paymentDiv">
             <h4>Pay On delivery (Cash/UPI)</h4>
-            <a href="otp.html">
+            <a href="otp.html"> -->
               <!-- <div id="pay">
                 PAYMENT
               </div> -->
-            </a>
+            <!-- </a>
+          </div> -->
+          <div id="creditBox">
+            <h3>CREDIT/DEBIT CARD</h3>
+            <p>Please ensure that your card can be used for online transactions. </p>
+            <P>Know More<i class="fa-thin fa-circle-chevron-down"></i></P>
+            <div>
+              <div class="checkout">
+                <!-- <h1>
+                  Checkout
+                </h1> -->
+                <!-- <h3>CREDIT/DEBIT CARD</h3> -->
+                <form>
+                  <input placeholder="Card Number" type="text" required = " " />
+                  <input placeholder="Name on card" type="text" required = " "  />
+                  <div class="half">
+                    <input placeholder="Valid Thru (MM/YY)" type="text" required = " "  />
+                    <input placeholder="CVV" type="text" required = " " />
+                  </div>
+                  <button type="submit">PAY NOW</button>
+                </form>
+              </div>
+                <!-- <button onclick="pay()">PAY NOW</button> -->
+            </div>
           </div>
         </div>
     </div>
-        
-      
-    
+
     <div class="orderbox">
       <div class="pricedets">PRICE DETAILS</div>
         <div class="total">
@@ -158,10 +179,20 @@
 </html>
 
 <script>
-  function credit(){
-    window.location.href="credit.html";
-  }
+  // function credit(){
+  //   window.location.href="credit.html";
+  // }
+  function creditShow(){
+    var crBox=document.getElementById("creditBox");
+    if(crBox.style.display==="none"){
+      crBox.style.display="block";
+    }
+    else{
+      crBox.style.display ="none";
 
+    }
+    // console.log("hii");
+  }
   var amount = localStorage.getItem("amount");
   document.querySelector(".amount_pay").innerText= amount;
 
@@ -181,4 +212,13 @@
   document.querySelector("#second").addEventListener("click",function(){
     window.location.href ="../payment/address.html"
   })
+
+
+
+  document.querySelector("form").addEventListener("submit" ,formfun);
+
+  function formfun(){
+    window.location.href="image.html";
+    alert("PAYMENT SUCCESSFUL");
+  }
 </script>
