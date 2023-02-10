@@ -84,7 +84,8 @@ let priceobj = {
   totalActualPrice: totalActual,
   discount: discount,
   totalQuantiPrice:totalPrice,
-  totalActualQuanti : totalActual
+  totalActualQuanti : totalActual,
+  totalActualQuantiPrice : totalActual
 };
 
 localStorage.setItem("totalPriceInfo", JSON.stringify(priceobj));

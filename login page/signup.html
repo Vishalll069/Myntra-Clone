@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="../css/footer.css">
 
     <style>
+      body{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
       #rk_sign, #rk_log {
             display: flex;
             flex-direction: column;
@@ -63,7 +66,7 @@
       />
     </div>
       <div id="rk_log">
-      <h3>Login <span  style="color:grey"> or </span><a href="/login.html">Sign up </a></h3>
+      <h3>Login <span  style="color:grey"> or </span><a href="login.html">Sign up </a></h3>
       <input id="rk_num" type="number" placeholder=" +91  |  Mobile Number*" required/>
       <p>By continuing, I agree to the <span style="color: #ff3f6b">Terms of Use</span style="color: #ff3f6b"> & <span style="color: #ff3f6b">Privacy <br>Policy</span> </p>
       <button onclick="myfun()" id="rk_cont">CONTINUE</button>
@@ -78,14 +81,13 @@
 function myfun() {
     
    let number = document.getElementById("rk_num").value;
-   if(!number){alert("number required")
+   if(!number || number.length != 10){alert("number required")
   
   }else{
 
   
-    localStorage.setItem("user_number", number);
-  
-    
+    localStorage.setItem("user_number", number);  
+    alert("Login Successfull !")
     window.location.href = "./otp.html";
   }
 }

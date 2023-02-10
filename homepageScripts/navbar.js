@@ -438,7 +438,7 @@ var navbar = `<div class="nav_up">
                           <div class="div" id="d1">
                           <h5 id="lh5">Welcome</h5>
                       <p id="lp">To access account and manage order</p>
-                      <button id="ls"><a id="logincss"href="/login/login.html">LOGIN / SIGNUP</a></button>
+                      <button id="ls"><a id="logincss"href="/login page/signup.html">LOGIN / SIGNUP</a></button>
                       <br>
                       <hr>
                           <ul>
