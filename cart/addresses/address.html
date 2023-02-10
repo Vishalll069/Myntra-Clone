@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel = "icon"href="https://cdn.iconscout.com/icon/free/png-512/myntra-2709168-2249158.png?f=avif&w=256"
+    type = "image/x-icon">
+    <link rel="stylesheet" href="address.css">
+  </head>
+  <body>
+    <div id="topBagNavbar" style="overflow: hidden">
+      <a id="pqr"  href="/index.html"><img  id="img101"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU" alt="" /></a>
+      <img src="/cart/topselect.PNG" alt="" />
+    </div>
+    <div id="addressContainer">
+      <div id="addressLeft">
+        <form>
+          <h6 id="contactDetailsh4">CONTACT DETAILS</h6>
+          <input type="text" id="name" placeholder="Name*" />
+          <br />
+          <input type="text" id="Mobile" placeholder="Mobile No*" />
+
+          <h6 id="addressh4">ADDRESS</h6>
+          <input type="text" id="pinCode" placeholder="Pin Code*" />
+          <br />
+          <input
+            type="text"
+            placeholder="Address (House No, Building, Street, Area)*"
+            id="address"
+          />
+          <br />
+          <input type="text" id="town" placeholder="Locality / Town*" />
+          <div class="flexThis" style="width: 90%">
+            <input type="text" id="city" placeholder="City / District*" />
+            <input type="text" id="state" placeholder="State*" />
+          </div>
+          <h6 style="margin-top: 30px">SAVE ADDRESS AS</h6>
+          <div class="flexThis" style="width: 35%">
+            <button
+              id="home"
+              style="border-radius: 50px"
+              
+            >
+              Home
+            </button>
+            <button
+              style="
+                border-radius: 50px;
+               
+                background-color: white;
+              "
+              
+              id="work"
+            >
+              Work
+            </button>
+          </div>
+          <div style="width: 90%; height: 30p; display: flex">
+            <input
+              type="checkbox"
+              style="margin-top: 30px; margin-left: -140px; height: 15px"
+            />
+            <p style="margin-left: -120px; margin-top: 25px">
+              Make this my default address
+            </p>
+          </div>
+          <button class="bigRedBtn" id="addAddress">ADD ADDRESS</button>
+        </form>
+      </div>
+      <div id="addressRight">
+        <h6>PRICE DETAILS(no. of items)</h6>
+        <div class="flexThis">
+          <p>Total MRP</p>
+          <p id="totalActual"></p>
+        </div>
+        <div class="flexThis">
+          <p>Discount on MRP</p>
+          <p id="discount"></p>
+        </div>
+        <div class="flexThis">
+          <p>Coupon Discount</p>
+          <p style="color: #ff3f6c">Apply Coupon</p>
+        </div>
+        <div class="flexThis" style="border-bottom: 1px solid grey">
+          <div>
+            <p>Convenience Fee <a href="">know more</a></p>
+          </div>
+          <div class="flexThis">
+            <p style="text-decoration: line-through">₹99</p>
+            <p style="color: #22aca5">FREE!</p>
+          </div>
+        </div>
+        <br />
+        <div class="flexThis">
+          <h6>Total Amount</h6>
+          <h3 id="totalP"></h3>
+        </div>
+      </div>
+    </div>
+    <div class="bottomBagNavbar">
+      <div>
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"
+          alt=""
+        />
+        <img
+          src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"
+          alt=""
+        />
+      </div>
+      <div><h6>Need Help? Contact Us</h6></div>
+    </div>
+  </body>
+</html>
+
+<script src="address.js"></script>

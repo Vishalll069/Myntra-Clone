@@ -1,0 +1,116 @@
+#wishlistempty {
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center; 
+   /* border: 1px solid blue; */
+  }
+  #wishlistempty > p {
+    color: grey;
+  }
+
+  #continue {
+    color: #3466e8;
+    border: 1px solid #3466e8;
+    border-radius: 5px;
+    background-color: white;
+    width: 55%;
+    height: 40px;
+    font-weight: 700;
+  }
+  #wishlistAppend {
+    width: 100%;
+    margin: auto;
+    /* height: auto; */
+    padding: 2rem;
+    display: grid;
+
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: auto;
+    grid-gap: 3rem;
+
+    /* border: 1px solid red; */
+  }
+
+#wishlistTitle{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#wishlistTitle > p{
+  /* border: 1px solid; */
+  text-align: center;
+  margin :0 0 5px 5px;
+}
+
+  #wishlistAppend > div {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  
+  #wishlistAppend > div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s;
+  }
+  #wishlistAppend > div > button {
+    width: 100%;
+    color: #ff3f6c;
+    height: 35px;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid lightgrey;
+  }
+
+  #wishlistAppend > div > button:hover{
+    background-color: hotpink;
+    color: white;
+    transition: 0.5s;
+  }
+
+  #wishlistAppend > div >img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    padding: 1rem;
+  }
+  #container{
+    /* border: 5px solid green; */
+    display: flex;
+    justify-content: center;
+    /* border:1px solid red; */
+
+  }
+  #innercontainer{
+    /* border: 5px solid rgb(0, 13, 128); */
+    width: 50%;
+  
+
+  }
+
+
+  #abc{
+    margin-left:-20rem;
+  }
+
+  #wishlistAppend{
+    margin-left:100px;
+  }
+
+  @media all and (min-width:451px) and (max-width:900px){
+    #wishlistAppend {
+      grid-template-columns: repeat(3, 200px);  
+      /* border: 1px solid red; */
+    }
+  }
+
+  @media all and (min-width:50px) and (max-width:451px){
+    #wishlistAppend {
+      grid-template-columns: repeat(2, 200px);  
+      /* border: 1px solid red; */
+    }
+  }

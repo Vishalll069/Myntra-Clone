@@ -1,5 +1,25 @@
 var navbar = `<div class="nav_up">
   <div id="navbar" > 
+
+  <!-- Hamburger Menu -->
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu">
+      <a href="#"><li><a href=""><i style="margin-right: 5px;" class="fa-solid fa-user"  id="i2" ></i>Profile</a> </li></a>
+      <a href="#"><li><a href="/wishlist/wishlist.html"><i style="margin-right: 7px;" class="fa-solid fa-heart font"  id="i1"></i>Wishlist</a></li></a>
+      <a href="#"><li><a id="count" href="/cart/cart.html">  <i style="margin-right: 7px;" class="fa-solid fa-bag-shopping font " id="i1"></i>Bag</a></li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Contact</li></a>
+      </ul>
+    </div>
+  </nav>
+
+
   <div class="parent-box-1"> 
 
   <div  class="logo_div">
@@ -441,12 +461,12 @@ var navbar = `<div class="nav_up">
                   </div>    
               </div>    
           <div>
-              <a href="/cart/wishlist.html"><i class="fa-solid fa-heart font"  id="i1"><span id="count_wish">&nbsp;<span></i></a><br>
-              <a id="wishlist_tag" href="/cart/wishlist.html">Whishlist</a>
+              <a href="/wishlist/wishlist.html"><i class="fa-solid fa-heart font"  id="i1"><span id="count_wish">&nbsp;<span></i></a><br>
+              <a id="wishlist_tag" href="/wishlist/wishlist.html">Whishlist</a>
           </div>            
           <div>
-              <a id="count" href="/cart/bag.html">  <i class="fa-solid fa-bag-shopping font " id="i1"><span  id="count_cart">&nbsp;</span></i></a>
-              <br>  <a id="cart_tag" href="/cart/bag.html">Bag</a>
+              <a id="count" href="/cart/cart.html">  <i class="fa-solid fa-bag-shopping font " id="i1"><span  id="count_cart">&nbsp;</span></i></a>
+              <br>  <a id="cart_tag" href="/cart/cart.html">Bag</a>
           </div>
       </div>        
   </div> 

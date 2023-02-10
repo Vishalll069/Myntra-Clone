@@ -20,10 +20,31 @@
 <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-
+  
   <div class="nav_up">
-    <div id="navbar" > 
-    <div class="parent-box-1"> 
+    <div id="navbar" >   
+
+
+          <!-- Hamburger Menu -->
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+    
+              <ul id="menu">
+                <a href="#"><li><a href=""><i style="margin-right: 5px;" class="fa-solid fa-user"  id="i2" ></i>Profile</a> </li></a>
+                <a href="#"><li><a href="/wishlist/wishlist.html"><i style="margin-right: 7px;" class="fa-solid fa-heart font"  id="i1"></i>Wishlist</a></li></a>
+                <a href="#"><li><a id="count" href="/cart/cart.html">  <i style="margin-right: 7px;" class="fa-solid fa-bag-shopping font " id="i1"></i>Bag</a></li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
+
+
+      <div class="parent-box-1"> 
 
     <div  class="logo_div">
     <a href="/index.html"> <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS357fHYAnvyZIqrnolaRs3MlCQO7PyKngEag&usqp=CAU"/></a> 
@@ -424,10 +445,9 @@
   <!-- Search Bar And Icons -->
     <div class="parent-box-2">  
         <div class="div1">
-            <input  type="text" name="" id="search" placeholder="Search for products, brands and more">
-            <span><i class="fa-solid fa-magnifying-glass">&nbsp;</i></span>          
-            <div id="two" ></div>
-        
+          <input  type="text" name="" id="search" placeholder="Search for products, brands and more">
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>          
+          <div id="two" ></div>        
         </div>
   
   <!-- Profile Card -->
@@ -435,7 +455,7 @@
             <div>
                 <div id="main_div">
                 <a href=""><i class="fa-solid fa-user"  id="i2" ></i></a>
-                <h5 id="profile_tag"><a  href="#">Profile</a></h5>
+                <h5  id="profile_tag"><a  href="#">Profile</a></h5>
                     <div id="vishal7">
                         <div id="b">
                             <div class="div" id="d1">
@@ -464,16 +484,15 @@
                     </div>    
                 </div>    
             <div>
-                <a href="/cart/wishlist.html"><i class="fa-solid fa-heart font"  id="i1"><span id="count_wish">&nbsp;<span></i></a><br>
-                <a id="wishlist_tag" href="/cart/wishlist.html">Whishlist</a>
+                <a href="/wishlist/wishlist.html"><i class="fa-solid fa-heart font"  id="i1"><span id="count_wish">&nbsp;<span></i></a><br>
+                <a class="logoName" id="wishlist_tag" href="/wishlist/wishlist.html">Whishlist</a>
             </div>            
             <div>
-                <a id="count" href="/cart/bag.html">  <i class="fa-solid fa-bag-shopping font " id="i1"><span  id="count_cart">&nbsp;</span></i></a>
-                <br>  <a id="cart_tag" href="/cart/bag.html">Bag</a>
+                <a id="count" href="/cart/cart.html">  <i class="fa-solid fa-bag-shopping font " id="i1"><span  id="count_cart">&nbsp;</span></i></a>
+                <br>  <a  id="cart_tag" href="/cart/cart.html">Bag</a>
             </div>
         </div>        
     </div> 
-
     </div>
   </div>
 
