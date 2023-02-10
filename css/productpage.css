@@ -120,6 +120,7 @@ body > div {
 .pricebox p:nth-child(2) {
   margin-left: 5px;
   margin-right: 5px;
+  text-decoration: line-through ;
 }
 .pricebox p:last-child {
   color: rgba(96, 95, 95, 0.664);
