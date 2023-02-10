@@ -102,8 +102,10 @@ body > div {
   text-align: left;
   margin-left: 10px;
 }
-.brandbox p:nth-child(2) {
-  color: rgba(96, 95, 95, 0.664);
+
+.desc{
+  color:rgba(16, 15, 15, 0.706);
+  font-weight:normal;
 }
 
 .pricebox {

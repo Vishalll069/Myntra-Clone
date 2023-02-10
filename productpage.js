@@ -1309,6 +1309,7 @@ function displayproducts(products){
         
         var desc = document.createElement("h3");
         desc.textContent = ele.type;
+        desc.setAttribute("class","desc");
         
         // var offer=document.createElement("p");
         // offer.textContent=ele.offer;

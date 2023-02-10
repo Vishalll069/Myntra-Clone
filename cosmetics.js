@@ -479,6 +479,7 @@ function displayproducts(products){
         
         var desc = document.createElement("h3");
         desc.textContent = ele.type;
+        desc.setAttribute("class","desc");
 
         var brandbox = document.createElement("div");
         brandbox.setAttribute("class","brandbox");
