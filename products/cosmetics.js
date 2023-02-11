@@ -532,7 +532,7 @@ function displayproducts(products){
     });
     console.log(products);
     console.log("hello there");
-    var wish = JSON.parse(localStorage.getItem("wishlistGo"))||[];
+    var wish = JSON.parse(localStorage.getItem("wish"))||[];
     function addtoWish(index){
         var wishitem = products.filter(function (elem, i){
             return i=== index;

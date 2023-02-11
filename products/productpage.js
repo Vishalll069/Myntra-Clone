@@ -1385,7 +1385,7 @@ function displayproducts(products){
     //  console.log(cartitem); 
     //  localStorage.setItem("cart",JSON.stringify(cart));  
     // }
-    var wish = JSON.parse(localStorage.getItem("wishlistGo"))||[];
+    var wish = JSON.parse(localStorage.getItem("wish"))||[];
     function addtoWish(index){
         var wishitem = products.filter(function (elem, i){
             return i=== index;

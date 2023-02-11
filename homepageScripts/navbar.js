@@ -29,21 +29,21 @@ var navbar = `<div class="nav_up">
     <!-- MENS  -->
   <div class="menu_div">         
       <div id="main_div">
-          <a id="button"  href="#">MENS</a>
+          <a id="button"  href="/products/productpage.html">MENS</a>
           <div id="vishal1">
       <div id="b">
       <div class="div" id="d1">
           <h5 class="h5"><a href="#">Topwear</a></h5>
           <ul>
-              <li><a href="/nav_itemsHTML/tshirtMens.html">T-shirts</a></li>
-              <li><a href="/nav_itemsHTML/casualshirtMens.html">Casual Shirts</a></li>
-              <li><a href="#">Formal Shirts</a></li>
-              <li><a href="#">Sweatshirts</a></li>
-              <li><a href="#">Sweaters</a></li>
-              <li><a href="#">Jackets</a></li>
-              <li><a href="#">Blazers & Coats</a></li>
-              <li><a href="#">Suits</a></li>
-              <li><a href="#">Rain Jackets</a></li>                        
+              <li><a href="/products/productpage.html">T-shirts</a></li>
+              <li><a href="/products/productpage.html">Casual Shirts</a></li>
+              <li><a href="/products/productpage.html">Formal Shirts</a></li>
+              <li><a href="/products/productpage.html">Sweatshirts</a></li>
+              <li><a href="/products/productpage.html">Sweaters</a></li>
+              <li><a href="/products/productpage.html">Jackets</a></li>
+              <li><a href="/products/productpage.html">Blazers & Coats</a></li>
+              <li><a href="/products/productpage.html">Suits</a></li>
+              <li><a href="/products/productpage.html">Rain Jackets</a></li>                        
           </ul>
       </div>
       <div  id="d2">  
@@ -106,15 +106,15 @@ var navbar = `<div class="nav_up">
           <div class="div" id="d1">
               <h5 class="h5"><a href="#">Indian & Fusion wear</a></h5>
               <ul>
-                  <li><a href="/nav_itemsHTML/kurtaSuitsWomen.html">Kurtas & Suits</a></li>
-                  <li><a href="/nav_itemsHTML/kurtisTunicWomen.html">Kurtis,Tunics & Tops</a></li>
-                  <li><a href="#">Ethnic Wear</a></li>
-                  <li><a href="#">Leggings, Salwars & Churidars</a></li>
-                  <li><a href="#">Skirts & Palazzos</a></li>
-                  <li><a href="#">Sarees</a></li>
-                  <li><a href="#">Dress Materials</a></li>
-                  <li><a href="#">Lehenga Cholis</a></li>
-                  <li><a href="#">Dupattas & Shawls</a></li>
+                  <li><a href="/products/womenpage.html">Kurtas & Suits</a></li>
+                  <li><a href="/products/womenpage.html">Kurtis,Tunics & Tops</a></li>
+                  <li><a href="/products/womenpage.html">Ethnic Wear</a></li>
+                  <li><a href="/products/womenpage.html">Leggings, Salwars & Churidars</a></li>
+                  <li><a href="/products/womenpage.html">Skirts & Palazzos</a></li>
+                  <li><a href="/products/womenpage.html">Sarees</a></li>
+                  <li><a href="/products/womenpage.html">Dress Materials</a></li>
+                  <li><a href="/products/womenpage.html">Lehenga Cholis</a></li>
+                  <li><a href="/products/womenpage.html">Dupattas & Shawls</a></li>
               </ul>
           </div>
           <div  id="d2">
@@ -332,18 +332,18 @@ var navbar = `<div class="nav_up">
           <div class="div" id="d1">
               <h5 class="h5"><a href="#">Makeup</a></h5>
                   <ul>
-                      <li><a href="/nav_itemsHTML/lipsticBeauty.html">Lipstick</a></li>
-                      <li><a href="#">Lip Gloss</a></li>
-                      <li><a href="#">Lip Liner</a></li>
-                      <li><a href="#">Mascara</a></li>
-                      <li><a href="#">Eyeliner</a></li>
-                      <li><a href="#">Kajal</a></li>
-                      <li><a href="#">Eyeshadow</a></li>
-                      <li><a href="#">Foundation</a></li>
-                      <li><a href="#">Primer</a></li>
-                      <li><a href="#">Concealer</a></li>
-                      <li><a href="#">Compact</a></li>
-                      <li><a href="#">Nail Polish</a></li>                        
+                      <li><a href="/products/cosmetics.html">Lipstick</a></li>
+                      <li><a href="/products/cosmetics.html">Lip Gloss</a></li>
+                      <li><a href="/products/cosmetics.html">Lip Liner</a></li>
+                      <li><a href="/products/cosmetics.html">Mascara</a></li>
+                      <li><a href="/products/cosmetics.html">Eyeliner</a></li>
+                      <li><a href="/products/cosmetics.html">Kajal</a></li>
+                      <li><a href="/products/cosmetics.html">Eyeshadow</a></li>
+                      <li><a href="/products/cosmetics.html">Foundation</a></li>
+                      <li><a href="/products/cosmetics.html">Primer</a></li>
+                      <li><a href="/products/cosmetics.html">Concealer</a></li>
+                      <li><a href="/products/cosmetics.html">Compact</a></li>
+                      <li><a href="/products/cosmetics.html">Nail Polish</a></li>                        
                   </ul>
           </div>
           <div  id="d2">

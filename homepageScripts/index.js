@@ -986,7 +986,7 @@ const Home = [
       dealOntopImg.src = Home[i].image;
       let linkEd=document.createElement("a")
       linkEd.append(dealOntopImg)
-      linkEd.href=`/nav_itemsHTML/${pagename}.html`
+      linkEd.href=`/products/${pagename}.html`
       document.getElementById(`${containerid}`).append(linkEd);
     }
   }
